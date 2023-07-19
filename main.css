@@ -384,7 +384,7 @@ of the website, in dark theme
     background: linear-gradient(180deg,
                 hsl(0, 0%, 16%) 93%,
                 hsl(0, 0%, 67%) 100%);
-                border-radius: 135px 135px 0 0;
+                border-radius: 110px 10px 0 0;
 }
 
 .home__img{
@@ -392,7 +392,7 @@ of the website, in dark theme
     width: 250px;
     height: 300px;
     overflow: hidden;
-    border-radius: 125px 125px 12px 12px;
+    border-radius: 110px 10px 12px 12px;
     display: inline-flex;
     align-items: flex-end;
     bottom: -1.5rem;
@@ -544,7 +544,7 @@ of the website, in dark theme
     width: 266px;
     height: 316px;
     background-color: hsl(228, 24%, 97%);
-    border-radius: 135px 135px 16px 16px ;
+    border-radius: 10px 135px 16px 16px ;
 }
 
 .value__img{
@@ -552,7 +552,7 @@ of the website, in dark theme
     width: 250px;
     height: 300px;
     overflow: hidden;
-    border-radius: 125px 125px 12px 12px;
+    border-radius: 10px 125px 12px 12px;
     inset: 0;
     margin: auto;
     box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
@@ -653,7 +653,7 @@ of the website, in dark theme
     width: 266px;
     height: 316px;
     background-color: hsl(228, 24%, 97%);
-    border-radius: 135px 135px 16px 16px;
+    border-radius: 135px 135px 120px 16px;
     
 }
 
@@ -662,7 +662,7 @@ of the website, in dark theme
     width: 250px;
     height: 300px;
     overflow: hidden;
-    border-radius: 125px 125px 12px 12px;
+    border-radius: 125px 125px 120px 12px;
     inset: 0;
     margin: auto;
     box-shadow: 0  16px 32px hsla(228, 66%, 25%, .25);

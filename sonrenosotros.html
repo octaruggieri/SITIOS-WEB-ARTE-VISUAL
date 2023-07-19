@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArteVisual</title>
+    <link rel="stylesheet" href="sobrenosotros.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <img src="images/logo footer.png" alt="Logo" />
+        </div>
+        <ul class="navbar__menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2 class="form-title">Formulario para PROYECTOS</h2>
+
+      <form class="form" id="contact-form" enctype="multipart/form-data">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+
+        <div>
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido" required />
+        </div>
+
+        <div>
+          <label for="ciudad">Ciudad</label>
+          <input type="text" id="ciudad" name="ciudad" required />
+        </div>
+
+        <div>
+          <label for="tipo_proyecto">Tipo de Proyecto</label>
+          <select id="tipo_proyecto" name="tipo_proyecto" required>
+            <option value="vivienda">Vivienda</option>
+            <option value="hogares">Hogares</option>
+            <option value="comercio">Comercio</option>
+            <option value="local">Local</option>
+            <option value="estación">Estación</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" required />
+        </div>
+
+        <div>
+          <label for="archivo">Archivo DEL PROYECTO</label>
+          <input
+            type="file"
+            id="archivo"
+            name="archivo"
+            accept="application/pdf"
+            required
+          />
+        </div>
+
+        <button type="submit">ENVIAR</button>
+      </form>
+    </section>
+
+    <main class="main">
+      <section id="inicio" class="section">
+        <div class="container">
+          <h1 class="section__title">Sobre Nosotros</h1>
+          <p class="section__description">
+            <strong>ArteVisual es una reconocida empresa argentina especializada en el
+            amoblamiento y equipamiento de una amplia variedad de espacios</strong>,
+            incluyendo locales comerciales, oficinas y hogares. <br> Con una
+            trayectoria destacada en el mercado, se <strong>distinguen por brindar
+            soluciones integrales y personalizadas</strong> que combinan funcionalidad,
+            estilo y calidad. <br> <br> <strong>Su amplio abanico de servicios </strong>abarca desde la
+            construcción de estructuras en diferentes materiales hasta la
+            creación de hogares modulares adaptados a las necesidades
+            individuales de cada cliente. <br> <br> <strong>Su equipo de profesionales altamente
+            capacitados y creativos</strong> se encarga de diseñar y ejecutar proyectos
+            que se ajusten a los gustos, presupuestos y requerimientos
+            específicos de cada cliente. Además, ArteVisual se destaca en la
+            creación de espacios comerciales y restaurantes, donde su enfoque se
+            centra en crear ambientes que no solo sean visualmente atractivos,
+            sino también funcionales y acogedores para los clientes. <br> <br> Su
+            <strong>experiencia en el manejo del espacio</strong>, la elección de materiales de
+            calidad y la atención meticulosa a los detalles les permite crear
+            entornos que promueven la experiencia de compra y el éxito del
+            negocio. En cuanto a los hogares en la montaña, ArteVisual se
+            especializa en aprovechar al máximo la belleza natural de estos
+            entornos, creando viviendas que se integran armoniosamente con el
+            paisaje y ofrecen vistas panorámicas impresionantes. <br> <br>  <strong>Su enfoque en
+            la sostenibilidad</strong>, la eficiencia energética y el uso de materiales
+            respetuosos con el medio ambiente garantiza la creación de hogares
+            modernos y confortables. En resumen, ArteVisual se destaca por su
+            experiencia en el amoblamiento, equipamiento y construcción de
+            espacios comerciales, oficinas y hogares. Su enfoque personalizado,
+            combinado con la atención a los detalles y la calidad en la
+            ejecución de proyectos, los convierte en una opción confiable y
+            reconocida en el mercado.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__text">
+          &copy; 2023 ArteVisual. Todos los derechos reservados OctaWebDesigns.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Obtén el formulario
+      const form = document.getElementById('contact-form');
+
+      // Escucha el evento de envío del formulario
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita que se envíe el formulario de forma predeterminada
+
+        // Obtén los valores de los campos del formulario
+        const nombre = document.getElementById('nombre').value;
+        const apellido = document.getElementById('apellido').value;
+        const ciudad = document.getElementById('ciudad').value;
+        const tipoProyecto = document.getElementById('tipo_proyecto').value;
+        const telefono = document.getElementById('telefono').value;
+
+        // Crea el mensaje de WhatsApp con los datos del formulario
+        const mensaje = `
+          Nombre: ${nombre}
+          Apellido: ${apellido}
+          Ciudad: ${ciudad}
+          Tipo de Proyecto: ${tipoProyecto}
+          Teléfono: ${telefono}
+        `;
+
+        // Codifica el mensaje para que sea válido en una URL
+        const mensajeCodificado = encodeURIComponent(mensaje);
+
+        // Crea el enlace de WhatsApp con el número y el mensaje
+        const enlaceWhatsApp = `https://wa.me/3513466611/?text=${mensajeCodificado}`;
+
+        // Abre una nueva ventana o pestaña con el enlace de WhatsApp
+        window.open(enlaceWhatsApp, '_blank');
+      });
+    </script>
+
+  </body>
+</html>

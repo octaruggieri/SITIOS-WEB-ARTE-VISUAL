@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Kablammo&family=Poppins:wght@400;500;600&display=swap");
+/*================== VARAIBLE CSS ================*/
+:root {
+    --header-height: 3.5rem;
+  
+    /*================== COLORS ================*/
+    /*Color mode HSL(hue, saturation, lightness) */
+    --first-color: hsl(228, 66%, 53%);
+    --first-color-alt: hsl(228, 66%, 47%);
+    --first-color-light: hsl(228, 62%, 59%);
+    --first-color-lighten: hsl(228, 100%, 97%);
+    --second-color: hsl(2, 83%, 53%);
+    --title-color: hsl(228, 57%, 28%);
+    --text-color: hsl(228, 15%, 50%);
+    --text-color-light: hsl(228, 12%, 75%);
+    --border-color: hsl(228, 99%, 98%);
+    --body-color: #fff;
+    --container-color: #fff;
+  
+    /*================== fONT AND TYPOGRAPHY ================*/
+    /*.5rem = 8px / 1rem  = 16px ...*/
+    --body-font: "Poppins", sans-serif;
+    --biggest-font-size: 2.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813;
+    --smaller-font-size: 0.75;
+  
+    /*================== FONT WEIGHT ================*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+  
+    /*================== Z-INDEX ================*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+  }
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos generales */
+  body {
+    font-family: var(--body-font);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos del encabezado */
+  .header {
+    background-color: #fff;
+    padding: 10px;
+    background: linear-gradient(170deg,
+                hsla(0, 0%, 22%) 0%,
+                hsl(0, 0%, 6%) 30%);
+    padding-bottom: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--body-font);
+    margin-right: 4rem;
+    
+  }
+  
+  .navbar__logo img {
+    height: 150px;
+  }
+  
+  .navbar__menu {
+    list-style: none;
+    display: flex;
+    
+  }
+  
+  .navbar__menu li {
+    margin-right: 10px;
+    
+  }
+  
+  .navbar__menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    margin-left: 5px;
+  }
+  
+  /* Estilos del contenido principal */
+  .section {
+    padding: 50px 0;
+  }
+  
+  .section__title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .section__description {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* Estilos del pie de página */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    font-family: var(--body-font);
+    background: linear-gradient(170deg, hsla(0, 0%, 22%) 0%, hsl(0, 0%, 6%) 30%);
+    padding-bottom: 0;
+  }
+  
+  .footer__text {
+    text-align: center;
+  }
+  
+  main {
+    margin: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 1rem;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,
+  select,
+  button {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  button {
+    background-color: #d43636;
+    color: #fff;
+    cursor: pointer;
+    font-family: var(--body-font);
+    margin: 0 auto; /* Agrega esta línea para centrar el botón */
+    display: block; /* Agrega esta línea para convertir el botón en un bloque */
+    margin-left: 8.5rem;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+
+  .form-title{
+    margin-left: 3rem;
+    padding-top: 2rem;
+  }
+  
+  @media only screen and (min-width: 480px) {
+    form {
+      grid-template-columns: 1fr;
+    }
+    
+    button {
+      margin-left: 0;
+    }
+    
+    .form-title{
+      margin-left: 0;
+      padding-top: 2rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .navbar__menu {
+        margin-top: 10px;
+        flex-direction: column;
+      }
+    
+      .navbar__menu li {
+        margin-right: 0;
+        margin-bottom: 5px;
+      }
+
+      .form{
+        width: 300px;
+      }
+    
+  }
+
+  @media only screen and (max-width: 320px) {
+    .navbar__logo img {
+      height: 100px;
+    }
+  
+    .navbar__menu li a {
+      font-size: 14px;
+    }
+    .navbar{
+        height: 100%;
+    }
+
+    .header{
+        height: 100px;
+        width: 100%;
+        
+    }
+  }
+  
