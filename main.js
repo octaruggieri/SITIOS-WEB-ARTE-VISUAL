@@ -159,4 +159,12 @@ const typed = new Typed('.typed', {
 	contentType: 'html', // 'html' o 'null' para texto sin formato
     
   });
+
+
+
+
+
+
+
+ 
   

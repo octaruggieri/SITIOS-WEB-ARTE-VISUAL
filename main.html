@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ArteVisual</title>
 
     <!--================ FAVICON =================-->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
     <link rel="manifest" href="/site.webmanifest" />
 
     <!--================ BOXICON =================-->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <!--================ SWIPER CSS =================-->
 
@@ -21,657 +37,593 @@
 
     <!--================ CSS =================-->
     <link rel="stylesheet" href="main.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">
-                <img src="images/LOGO.png" alt="logo" />
-            </a>
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img src="images/LOGO.png" alt="logo" />
+        </a>
 
-            <div class="nav__menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link">
-                            <i class="bx bxs-home"></i>
-                            <span>Inicio</span>
-                        </a>
-                    </li>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="bx bxs-home"></i>
+                <span>Inicio</span>
+              </a>
+            </li>
 
-                    <li class="nav__item">
-                        <a href="#popular" class="nav__link active-link">
-                            <i class="bx bx-building-house"></i>
-                            <span>Casas modulares</span>
-                        </a>
-                    </li>
+            <li class="nav__item">
+              <a href="#popular" class="nav__link active-link">
+                <i class="bx bx-building-house"></i>
+                <span>Casas modulares</span>
+              </a>
+            </li>
 
-                    <li class="nav__item">
-                        <a href="#value" class="nav__link">
-                            <i class="bx bxs-user-check"></i>
-                            <span>Clientes</span>
-                        </a>
-                    </li>
+            <li class="nav__item">
+              <a href="#value" class="nav__link">
+                <i class="bx bxs-user-check"></i>
+                <span>Clientes</span>
+              </a>
+            </li>
 
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="bx bxs-phone"></i>
-                            <span>Contacto</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="bx bxs-phone"></i>
+                <span>Contacto</span>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-            <!-- them change button -->
-            <i class='bx bx-moon change-theme' id="theme-button"></i>
-            
+        <!-- them change button -->
+        <i class="bx bx-moon change-theme" id="theme-button"></i>
 
-            <a href="#" class="button nav__button"> Suscribirse </a>
-        </nav>
+        <a href="#" class="button nav__button"> Suscribirse </a>
+      </nav>
     </header>
 
     <!--==================== MAIN ====================-->
     <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__data">
-                    <h1 class="home__title">
-                        ArteVisual <br />
-                        Amoblamiento y equipamiento de <span class="typed"></span>
-                    </h1>
-                    <p class="home__description">
-                        Construcción de estructuras en todo tipo de materiales.
-                        <br />Módulos habitacionales.
-                    </p>
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">
+              ArteVisual <br />
+              Amoblamiento y equipamiento de <span class="typed"></span>
+            </h1>
+            <p class="home__description">
+              Construcción de estructuras en todo tipo de materiales.
+              <br />Módulos habitacionales.
+            </p>
 
-                    <form action="#" class="home__search">
-                        <i class="bx bxs-map"></i>
-                        <input type="search" placeholder="Buscar localidades..." class="home__search-input" />
-                        <button class="button">Buscar</button>
-                    </form>
+            <form action="#" class="home__search">
+              <i class="bx bxs-map"></i>
+              <input
+                type="search"
+                placeholder="Realizar consulta..."
+                class="home__search-input"
+              />
+              <button class="button">Consultar</button>
+            </form>
 
-                    <div class="home__value">
-                        <div>
-                            <h1 class="home__value-number">7k<span>+</span></h1>
-                            <span class="home__value-description">
-                                Servicio<br />Profesional
-                            </span>
-                        </div>
 
-                        <div>
-                            <h1 class="home__value-number">8k <span>+</span></h1>
-                            <span class="home__value-description">
-                                Experiencia en<br />
-                                
-                            </span>
-                        </div>
-
-                        <div>
-                            <h1 class="home__value-number">1k <span>+</span></h1>
-                            <span class="home__value-description">
-                                Experiencia <br />
-                                en casas Modulares
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="home__images">
-                    <div class="home__orbe"></div>
-
-                    <div class="home__img">
-                        <img src="images/home.png" alt="" />
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== LOGOS ====================-->
-        <section class="logos section">
-            <div class="logos__container container grid">
-                <div class="logos__img">
-                    <img src="images/pizzeria.png" alt="" />
-                </div>
-
-                <div class="logos__img">
-                    <img src="images/patagonia.png" alt="" />
-                </div>
-
-                <div class="logos__img">
-                    <img src="images/ypf.png" alt="" />
-                </div>
-
-                <div class="logos__img">
-                    <img src="images/vaqueria.png" alt="" />
-                </div>
-            </div>
-        </section>
-
-        <!--==================== POPULAR ====================-->
-        <section class="popular section" id="popular">
-            <div class="container">
-                <span class="section__subtitle">Mejores de Córdoba</span>
-                <h2 class="section__title">Nuestras Casas Modulares<span>.</span></h2>
-
-                <div class="popular__container swiper">
-                    <div class="swiper-wrapper">
-                        <article class="popular__card swiper-slide">
-                            <img src="images/casa 2.jpg" alt="" class="popular__img" />
-
-                            <div class="popular__data swiper-slide">
-                                <h2 class="popular__price">Casa Modular</h2>
-                                <h3 class="popular__title">
-                                    Tipología: Vivienda de 3 módulos
-                                </h3>
-                                <p class="popular__description">
-                                    Estancia la Gunka 2022
-                                </p>
-                            </div>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <img src="images/casa 3.jpg" alt="" class="popular__img" />
-
-                            <div class="popular__data">
-                                <h2 class="popular__price">
-                                    Quincho Modular <i class='bx bxs-right-arrow-alt'></i>
-                                </h2>
-                                <h3 class="popular__title">
-                                    Tipología: Vivienda
-                                </h3>
-                                <p class="popular__description">
-                                    Mendiolaza - Córdoba 2022
-                                </p>
-                            </div>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <img src="images/casa 4.jpg" alt="" class="popular__img" />
-
-                            <div class="popular__data">
-                                <h2 class="popular__price"></h2>
-                                <h3 class="popular__title">
-                                    
-                                </h3>
-                                <p class="popular__description">
-                                    
-                                </p>
-                            </div>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <img src="images/ypf full.png" alt="" class="popular__img" />
-
-                            <div class="popular__data">
-                                <h2 class="popular__price">YPF Full <i class='bx bxs-right-arrow-alt'></i></h2>
-                                <h3 class="popular__title">
-                                    Capilla del monte Argentina
-                                </h3>
-                                <p class="popular__description">
-                                    Proyecto: Arquitecta Sandra Layus
-                                    Ejecutado por ArteVisual
-                                </p>
-                            </div>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <img src="images/ypf full 2.png" alt="" class="popular__img" />
-
-                            <div class="popular__data">
-                                <h2 class="popular__price"></h2>
-                                <h3 class="popular__title">
-                                    
-                                </h3>
-                                <p class="popular__description">
-                                    
-                                </p>
-                            </div>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <img src="images/ypf 1.png" alt="" class="popular__img" />
-
-                            <div class="popular__data">
-                                <h2 class="popular__price">YPF</h2>
-                                <h3 class="popular__title">
-                                    Shop de estación de servicio YPF
-                                </h3>
-                                <p class="popular__description">
-                                    Ejecutado por ArteVisual
-                                </p>
-                            </div>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <img src="images/pizza 1.png" alt="" class="popular__img" />
-
-                            <div class="popular__data">
-                                <h2 class="popular__price">Pizzeria Popular <i class='bx bxs-right-arrow-alt'></i></h2>
-                                <h3 class="popular__title">
-                                    Ejecutada por ArteVisual
-                                </h3>
-                                <p class="popular__description">
-                                    Córdoba Argentina
-                                </p>
-                            </div>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <img src="images/pizza 2.png" alt="" class="popular__img" />
-
-                            <div class="popular__data">
-                                <h2 class="popular__price"></h2>
-                                <h3 class="popular__title">
-                                    
-                                </h3>
-                                <p class="popular__description">
-                                    
-                                </p>
-                            </div>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <img src="images/clun house.png" alt="" class="popular__img" />
-
-                            <div class="popular__data">
-                                <h2 class="popular__price">Club House y Casas Modulares</h2>
-                                <h3 class="popular__title">
-                                    Ejecución de obra: Club House y Casas modulares
-                                    Tipología: Comercio y Vivienda
-                                </h3>
-                                <p class="popular__description">
-                                    Córdoba Argentina
-                                </p>
-                            </div>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <img src="images/casita 1.png" alt="" class="popular__img" />
-
-                            <div class="popular__data">
-                                <h2 class="popular__price">Casa Yacanto</h2>
-                                <h3 class="popular__title">
-                                    Una maravilla de arquitectura
-                                    El desafío de construir en la montaña
-                                </h3>
-                                <p class="popular__description">
-                                    Córdoba Argentina
-                                </p>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="swiper-button-next">
-                        <i class="bx bx-chevron-right"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="bx bx-chevron-left"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== VALUE ====================-->
-        <section class="value section" id="value">
-            <div class="value__container container grid">
-                <div class="value__images">
-                    <div class="value__orbe"></div>
-
-                    <div class="value__img">
-                        <img src="images/foto 3.png" alt="" />
-                    </div>
-                </div>
-
-                <div class="value__content">
-                    <div class="value__data">
-                        <span class="section__subtitle">Materiales de calidad</span>
-                        <h2 class="section__title">
-                            Presupuestos PERSONALIZADOS<span>.</span>
-                        </h2>
-                        <p class="value__description">
-                            Amoblamiento, equipamiento y construcción de estructuras en
-                            diversos materiales. Módulos habitacionales disponibles
-                        </p>
-                    </div>
-
-                    <div class="value__accordion">
-                        <div class="value__accordion-item">
-                            <header class="value__accordion-header">
-                                <i class='bx bx-store-alt value__accordion-icon'></i>
-                                <h3 class="value__accordion-title">
-                                    Negocios/Locales
-                                </h3>
-                                <div class="value__accordion-arrow">
-                                    <i class='bx bxs-down-arrow'></i>
-                                </div>
-                            </header>
-
-                            <div class="value__accordion-content">
-                                <p class="value__accordion-description">
-                                    Durabilidad y resistencia en todos nuestros productos y construcciones.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="value__accordion-item">
-                            <header class="value__accordion-header">
-                                <i class='bx bx-home-alt value__accordion-icon'></i>
-                                <h3 class="value__accordion-title">
-                                    Hogares
-                                </h3>
-                                <div class="value__accordion-arrow">
-                                    <i class='bx bxs-down-arrow'></i>
-                                </div>
-                            </header>
-
-                            <div class="value__accordion-content">
-                                <p class="value__accordion-description">
-                                    Diseños ergonómicos que priorizan tu comodidad y bienestar
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="value__accordion-item">
-                            <header class="value__accordion-header">
-                                <i class='bx bx-building-house value__accordion-icon'></i>
-                                <h3 class="value__accordion-title">
-                                    Casas Modulares
-                                </h3>
-                                <div class="value__accordion-arrow">
-                                    <i class='bx bxs-down-arrow'></i>
-                                </div>
-                            </header>
-
-                            <div class="value__accordion-content">
-                                <p class="value__accordion-description">
-                                    Optimización del espacio para aprovechar al máximo cada rincón y mejorar la
-                                    organización.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="value__accordion-item">
-                            <header class="value__accordion-header">
-                                <i class='bx bx-hard-hat value__accordion-icon'></i>
-                                <h3 class="value__accordion-title">
-                                    Estructuras
-                                </h3>
-                                <div class="value__accordion-arrow">
-                                    <i class='bx bxs-down-arrow'></i>
-                                </div>
-                            </header>
-
-                            <div class="value__accordion-content">
-                                <p class="value__accordion-description">
-                                    Soluciones versátiles que se adaptan a tus necesidades cambiantes a lo largo del
-                                    tiempo.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="value__accordion-item">
-                            <header class="value__accordion-header">
-                                <i class='bx bx-map value__accordion-icon'></i>
-                                <h3 class="value__accordion-title">
-                                    Sobre Nosotros
-                                </h3>
-                                <div class="value__accordion-arrow">
-                                    <i class='bx bxs-down-arrow'></i>
-                                </div>
-                            </header>
-
-                            <div class="value__accordion-content">
-                                <p class="value__accordion-description">
-                                    Optimización del espacio para aprovechar al máximo cada rincón y mejorar la
-                                    organización.
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== CONTACT ====================-->
-        <section class="contact section" id="contact">
-            <div class="contact__container container grid">
-              <div class="contact__images">
-                <div class="contact__orbe"></div>
-          
-                <div class="contact__img">
-                  <img src="images/TECHO 2.jpg" alt="">
-                </div>
+            <div class="home__value">
+              <div>
+                <h1 class="home__value-number">7k<span>+</span></h1>
+                <span class="home__value-description">
+                  Servicio<br />Profesional
+                </span>
               </div>
-          
-              <div class="contact__content">
-                <div class="contact__data">
-                  <span class="section__subtitle">Contactate con nosotros</span>
-                  <h2 class="section__title">
-                    Fácil acceso a nuestra plataforma<span>.</span>
+
+              <div>
+                <h1 class="home__value-number">8k <span>+</span></h1>
+                <span class="home__value-description">
+                  Experiencia en <br />Comercios<br />
+                </span>
+              </div>
+
+              <div>
+                <h1 class="home__value-number">1k <span>+</span></h1>
+                <span class="home__value-description">
+                  Experiencia <br />
+                  en casas Modulares
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="home__images">
+            <div class="home__orbe"></div>
+
+            <div class="home__img">
+              <img src="images/home.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== LOGOS ====================-->
+      <section class="logos section">
+        <div class="logos__container container grid">
+          <div class="logos__img">
+            <img src="images/pizzeria.png" alt="" />
+          </div>
+
+          <div class="logos__img">
+            <img src="images/patagonia.png" alt="" />
+          </div>
+
+          <div class="logos__img">
+            <img src="images/ypf.png" alt="" />
+          </div>
+
+          <div class="logos__img">
+            <img src="images/vaqueria.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!--==================== POPULAR ====================-->
+      <section class="popular section" id="popular">
+        <div class="container">
+          <span class="section__subtitle">Mejores de Córdoba</span>
+          <h2 class="section__title">Nuestras Casas Modulares<span>.</span></h2>
+
+          <div class="popular__container swiper">
+            <div class="swiper-wrapper">
+              <article class="popular__card swiper-slide">
+                <img src="images/casa 2.jpg" alt="" class="popular__img" />
+
+                <div class="articulos" class="popular__data swiper-slide">
+                  <h2 class="popular__price">Casa Modular</h2>
+                  <h3 class="popular__title">
+                    Tipología: Vivienda de 3 módulos
+                  </h3>
+                  <p class="popular__description">Estancia la Gunka 2022</p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img src="images/casa 3.jpg" alt="" class="popular__img" />
+
+                <div class="articulos" class="popular__data">
+                  <h2 class="popular__price">
+                    Quincho Modular <i class="bx bxs-right-arrow-alt"></i>
                   </h2>
-                  <p class="contact__description">
-                    En nuestra empresa, nos especializamos en ofrecer soluciones integrales para amoblamiento, equipamiento y construcción de estructuras. Nuestros servicios abarcan desde locales comerciales y oficinas hasta hogares, brindando calidad y estilo en cada proyecto.
+                  <h3 class="popular__title">Tipología: Vivienda</h3>
+                  <p class="popular__description">Mendiolaza - Córdoba 2022</p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img src="images/casa 4.jpg" alt="" class="popular__img" />
+
+                <div class="popular__data">
+                  <h2 class="popular__price"></h2>
+                  <h3 class="popular__title"></h3>
+                  <p class="popular__description"></p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img src="images/ypf full.png" alt="" class="popular__img" />
+
+                <div class="articulos" class="popular__data">
+                  <h2 class="popular__price">
+                    YPF Full <i class="bx bxs-right-arrow-alt"></i>
+                  </h2>
+                  <h3 class="popular__title">Capilla del monte Argentina</h3>
+                  <p class="popular__description">
+                    Proyecto: Arquitecta Sandra Layus Ejecutado por ArteVisual
                   </p>
                 </div>
-          
-                <div class="contact__card">
-                  <div class="contact__card-box">
-                    <div class="contact__card-info">
-                      <i class='bx bxl-whatsapp'></i>
-                      <div>
-                        <h3 class="contact__card-title">
-                          Whatsapp
-                        </h3>
-                        <p class="contact__card-description">
-                          3514352312
-                        </p>
-                      </div>
-                    </div>
-                    <button class="button contact__card-button">
-                      Hablar Ahora
-                    </button>
-                  </div>
-          
-                  <div class="contact__card-box">
-                    <div class="contact__card-info">
-                      <i class='bx bx-mail-send'></i>
-                      <div>
-                        <h3 class="contact__card-title">
-                          Email
-                        </h3>
-                        <p class="contact__card-description">
-                          artevisua
-                        </p>
-                      </div>
-                    </div>
-                    <button class="button contact__card-button">
-                      Enviar email
-                    </button>
-                  </div>
-          
-                  <div class="contact__card-box">
-                    <div class="contact__card-info">
-                      <i class='bx bx-export'></i>
-                      <div>
-                        <h3 class="contact__card-title">
-                          PROYECTOS
-                        </h3>
-                        <p class="contact__card-description">
-                          proyectos diseñados
-                        </p>
-                      </div>
-                    </div>
-                    <button class="button contact__card-button">
-                      Enviar Proyecto
-                    </button>
-                  </div>
+              </article>
 
-                  <div class="contact__card-box">
-                    <div class="contact__card-info">
-                        <i class='bx bxl-instagram' ></i>
-                      <div>
-                        <h3 class="contact__card-title">
-                          INSTAGRAM
-                        </h3>
-                        <p class="contact__card-description">
-                          Proyectos actuales
-                        </p>
-                      </div>
-                    </div>
-                    <button class="button contact__card-button">
-                        Seguir
-                    </button>
+              <article class="popular__card swiper-slide">
+                <img src="images/ypf full 2.png" alt="" class="popular__img" />
+
+                <div class="popular__data">
+                  <h2 class="popular__price"></h2>
+                  <h3 class="popular__title"></h3>
+                  <p class="popular__description"></p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img src="images/ypf 1.png" alt="" class="popular__img" />
+
+                <div class="articulos" class="popular__data">
+                  <h2 class="popular__price">YPF</h2>
+                  <h3 class="popular__title">
+                    Shop de estación de servicio YPF
+                  </h3>
+                  <p class="popular__description">Ejecutado por ArteVisual</p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img src="images/pizza 1.png" alt="" class="popular__img" />
+
+                <div class="articulos" class="popular__data">
+                  <h2 class="popular__price">
+                    Pizzeria Popular <i class="bx bxs-right-arrow-alt"></i>
+                  </h2>
+                  <h3 class="popular__title">Ejecutada por ArteVisual</h3>
+                  <p class="popular__description">Córdoba Argentina</p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img src="images/pizza 2.png" alt="" class="popular__img" />
+
+                <div class="popular__data">
+                  <h2 class="popular__price"></h2>
+                  <h3 class="popular__title"></h3>
+                  <p class="popular__description"></p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img src="images/clun house.png" alt="" class="popular__img" />
+
+                <div class="articulos" class="popular__data">
+                  <h2 class="popular__price">Club House y Casas Modulares</h2>
+                  <h3 class="popular__title">
+                    Ejecución de obra: Club House y Casas modulares Tipología:
+                    Comercio y Vivienda
+                  </h3>
+                  <p class="popular__description">Córdoba Argentina</p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img src="images/casita 1.png" alt="" class="popular__img" />
+
+                <div class="articulos" class="popular__data">
+                  <h2 class="popular__price">Casa Yacanto</h2>
+                  <h3 class="popular__title">
+                    Una maravilla de arquitectura El desafío de construir en la
+                    montaña
+                  </h3>
+                  <p class="popular__description">Córdoba Argentina</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="bx bx-chevron-right"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="bx bx-chevron-left"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== VALUE ====================-->
+      <section class="value section" id="value">
+        <div class="value__container container grid">
+          <div class="value__images">
+            <div class="value__orbe"></div>
+
+            <div class="value__img">
+              <img src="images/foto 3.png" alt="" />
+            </div>
+          </div>
+
+          <div class="value__content">
+            <div class="value__data">
+              <span class="section__subtitle">Materiales de calidad</span>
+              <h2 class="section__title">
+                Presupuestos PERSONALIZADOS<span>.</span>
+              </h2>
+              <p class="value__description">
+                Amoblamiento, equipamiento y construcción de estructuras en
+                diversos materiales. Módulos habitacionales disponibles
+              </p>
+            </div>
+
+            <div class="value__accordion">
+              <div class="value__accordion-item">
+                <header class="value__accordion-header">
+                  <i class="bx bx-store-alt value__accordion-icon"></i>
+                  <h3 class="value__accordion-title">Negocios/Locales</h3>
+                  <div class="value__accordion-arrow">
+                    <i class="bx bxs-down-arrow"></i>
                   </div>
+                </header>
+
+                <div class="value__accordion-content">
+                  <p class="value__accordion-description">
+                    Durabilidad y resistencia en todos nuestros productos y
+                    construcciones.
+                  </p>
+                </div>
+              </div>
+
+              <div class="value__accordion-item">
+                <header class="value__accordion-header">
+                  <i class="bx bx-home-alt value__accordion-icon"></i>
+                  <h3 class="value__accordion-title">Hogares</h3>
+                  <div class="value__accordion-arrow">
+                    <i class="bx bxs-down-arrow"></i>
+                  </div>
+                </header>
+
+                <div class="value__accordion-content">
+                  <p class="value__accordion-description">
+                    Diseños ergonómicos que priorizan tu comodidad y bienestar
+                  </p>
+                </div>
+              </div>
+
+              <div class="value__accordion-item">
+                <header class="value__accordion-header">
+                  <i class="bx bx-building-house value__accordion-icon"></i>
+                  <h3 class="value__accordion-title">Casas Modulares</h3>
+                  <div class="value__accordion-arrow">
+                    <i class="bx bxs-down-arrow"></i>
+                  </div>
+                </header>
+
+                <div class="value__accordion-content">
+                  <p class="value__accordion-description">
+                    Optimización del espacio para aprovechar al máximo cada
+                    rincón y mejorar la organización.
+                  </p>
+                </div>
+              </div>
+
+              <div class="value__accordion-item">
+                <header class="value__accordion-header">
+                  <i class="bx bx-hard-hat value__accordion-icon"></i>
+                  <h3 class="value__accordion-title">Estructuras</h3>
+                  <div class="value__accordion-arrow">
+                    <i class="bx bxs-down-arrow"></i>
+                  </div>
+                </header>
+
+                <div class="value__accordion-content">
+                  <p class="value__accordion-description">
+                    Soluciones versátiles que se adaptan a tus necesidades
+                    cambiantes a lo largo del tiempo.
+                  </p>
+                </div>
+              </div>
+
+              <div class="value__accordion-item">
+                <header class="value__accordion-header">
+                  <i class="bx bx-map value__accordion-icon"></i>
+                  <h3 class="value__accordion-title">Sobre Nosotros</h3>
+                  <div class="value__accordion-arrow">
+                    <i class="bx bxs-down-arrow"></i>
+                  </div>
+                </header>
+
+                <div class="value__accordion-content">
+                  <p class="value__accordion-description">
+                    Optimización del espacio para aprovechar al máximo cada
+                    rincón y mejorar la organización.
+                  </p>
                 </div>
               </div>
             </div>
-          </section>
-          
+          </div>
+        </div>
+      </section>
 
-        <!--==================== SUBSCRIBE ====================-->
-        <section class="subscribe section">
-            <div class="subscribe__container container">
-                <h1 class="subscribe__title">
-                    Comenzá ahora con tu Proyecto
-                </h1>
-                <p class="subscribe__description">
-                    Subscribite y enterate de todos los nuevos proyectos
-                </p>
-                <a href="sobrenostros.html" class="button subscribe__button">
-                    Comenzar Ahora
-                </a>
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+          <div class="contact__images">
+            <div class="contact__orbe"></div>
+
+            <div class="contact__img">
+              <img src="images/TECHO 2.jpg" alt="" />
             </div>
-        </section>
+          </div>
+
+          <div class="contact__content">
+            <div class="contact__data">
+              <span class="section__subtitle">Contactate con nosotros</span>
+              <h2 class="section__title">
+                Fácil acceso a nuestra plataforma<span>.</span>
+              </h2>
+              <p class="contact__description">
+                En nuestra empresa, nos especializamos en ofrecer soluciones
+                integrales para amoblamiento, equipamiento y construcción de
+                estructuras. Nuestros servicios abarcan desde locales
+                comerciales y oficinas hasta hogares, brindando calidad y estilo
+                en cada proyecto.
+              </p>
+            </div>
+
+            <div class="contact__card">
+              <div class="contact__card-box">
+                <div class="contact__card-info">
+                  <i class="bx bxl-whatsapp"></i>
+                  <div>
+                    <h3 class="contact__card-title">Whatsapp</h3>
+                    <p class="contact__card-description">3514352312</p>
+                  </div>
+                </div>
+                <button class="button contact__card-button">
+                  Hablar Ahora
+                </button>
+              </div>
+
+              <div class="contact__card-box">
+                <div class="contact__card-info">
+                  <i class="bx bx-mail-send"></i>
+                  <div>
+                    <h3 class="contact__card-title">Email</h3>
+                    <p class="contact__card-description">artevisua</p>
+                  </div>
+                </div>
+                <button class="button contact__card-button">
+                  Enviar email
+                </button>
+              </div>
+
+              <div class="contact__card-box">
+                <div class="contact__card-info">
+                  <i class="bx bx-export"></i>
+                  <div>
+                    <h3 class="contact__card-title">PROYECTOS</h3>
+                    <p class="contact__card-description">proyectos diseñados</p>
+                  </div>
+                </div>
+                <button class="button contact__card-button">
+                  Enviar Proyecto
+                </button>
+              </div>
+
+              <div class="contact__card-box">
+                <div class="contact__card-info">
+                  <i class="bx bxl-instagram"></i>
+                  <div>
+                    <h3 class="contact__card-title">INSTAGRAM</h3>
+                    <p class="contact__card-description">Proyectos actuales</p>
+                  </div>
+                </div>
+                <button class="button contact__card-button">Seguir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SUBSCRIBE ====================-->
+      <section class="subscribe section">
+        <div class="subscribe__container container">
+          <h1 class="subscribe__title">Comenzá ahora con tu Proyecto</h1>
+          <p class="subscribe__description">
+            Subscribite y enterate de todos los nuevos proyectos
+          </p>
+          <a href="sobrenostros.html " class="button subscribe__button">
+            Comenzar Ahora
+          </a>
+        </div>
+      </section>
     </main>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer section">
-        <div class="footer__container container grid">
-            <div>
-                <a href="#" class="footer__logo">
-                    <img src="images/logo footer.png" alt="logo" />
-                </a>
-                <p class="footer__description">
-                    
-                </p>
-            </div>
-
-            <div class="footer__content">
-                <div>
-                    <h3 class="footer__title">
-                        Acerca de
-                    </h3>
-
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">Sobre Nosotros</a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="footer__link">Caracteristicas</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">
-                        Arte Visual
-                    </h3>
-
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">trabajo</a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="footer__link">Córdoba Argentina</a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="footer__link">Seguridad</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">
-                        Arte Visual
-                    </h3>
-
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">Como trabajamos</a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="footer__link">Córdoba Argentina</a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="footer__link">Seguridad</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">
-                        Redes
-                    </h3>
-
-                    <ul class="footer__social">
-                       <a href="https://www.instagram.com/artevisual.bytpg/?hl=es-la" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-instagram'></i>
-                       </a>
-
-                       <a href="#" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-whatsapp'></i>
-                       </a>
-
-                       <a href="#" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-facebook-circle' ></i>
-                       </a> 
-
-                    </ul>
-                </div>
-            </div>
+      <div class="footer__container container grid">
+        <div>
+          <a href="#" class="footer__logo">
+            <img src="images/logo footer.png" alt="logo" />
+          </a>
+          <p class="footer__description"></p>
         </div>
 
+        <div class="footer__content">
+          <div>
+            <h3 class="footer__title">Acerca de</h3>
 
-        <div class="footer__info container">
-            <span class="footer__copy">
-                &#169; OctaWebDesigns. Derechos Reservados
-            </span>
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">Sobre Nosotros</a>
+              </li>
 
-            <div class="footer__privacy">
-                <a href="#">Terminos y Condiciones</a>
-                <a href="#">Política de Privacidad</a>
-            </div>
+              <li>
+                <a href="#" class="footer__link">Caracteristicas</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Arte Visual</h3>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">trabajo</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">Córdoba Argentina</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">Seguridad</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Arte Visual</h3>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">Como trabajamos</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">Córdoba Argentina</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">Seguridad</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Redes</h3>
+
+            <ul class="footer__social">
+              <a
+                href="https://www.instagram.com/artevisual.bytpg/?hl=es-la"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="bx bxl-instagram"></i>
+              </a>
+
+              <a href="#" target="_blank" class="footer__social-link">
+                <i class="bx bxl-whatsapp"></i>
+              </a>
+
+              <a href="#" target="_blank" class="footer__social-link">
+                <i class="bx bxl-facebook-circle"></i>
+              </a>
+            </ul>
+          </div>
         </div>
+      </div>
+
+      <div class="footer__info container">
+        <span class="footer__copy">
+          &#169; OctaWebDesigns. Derechos Reservados
+        </span>
+
+        <div class="footer__privacy">
+          <a href="#">Terminos y Condiciones</a>
+          <a href="#">Política de Privacidad</a>
+        </div>
+      </div>
     </footer>
 
     <!--==================== SCROLL UP ====================-->
     <a href="#" class="scrollup" id="scroll-up">
-        <i class='bx bx-chevrons-up'></i>
+      <i class="bx bx-chevrons-up"></i>
     </a>
 
-    <!--==================== SCROLLREVEAL ====================-->
-    <script src="raw.githubusercontent.com_jlmakes_scrollreveal_master_dist_scrollreveal.min.js"></script>
+     <!--==================== SCROLLREVEAL ====================-->
+  <script src="https://raw.githubusercontent.com/jlmakes/scrollreveal/master/dist/scrollreveal.min.js"></script>
 
-    <!--==================== SWIPER JS ====================-->
-    <script src="swiper-bundle.min.js"></script>
+  <!--==================== SWIPER JS ====================-->
+  <script src="swiper-bundle.min.js"></script>
 
-    <!--==================== TYPED JS ====================-->
-    <script src="unpkg.com_typed.js@2.0.16_dist_typed.umd.js"></script>
+  <!--==================== TYPED JS ====================-->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-
-    <!--==================== MAIN JS ====================-->
-    <script src="main.js"></script>
+  <!--==================== MAIN JS ====================-->
+  <script src="main.js"></script>
 </body>
-
 </html>
