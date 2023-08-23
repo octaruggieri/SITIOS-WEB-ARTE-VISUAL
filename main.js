@@ -161,6 +161,13 @@ const typed = new Typed('.typed', {
   });
 
 
+  button.onclick = function() {
+    var buscar = document.getElementById("searchInput").valve;
+    if (buscar == "hola") {
+        panel.innerHTML = "es una palabra española";
+    }
+  }
+
 
 
 
