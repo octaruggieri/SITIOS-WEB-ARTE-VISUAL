@@ -132,6 +132,17 @@
   
   h2 {
     margin-bottom: 20px;
+    text-align: center;
+  }
+
+  p{
+    font-size: 12px;
+    text-align: center;
+  }
+
+  p span{
+    color: #d43636;
+    font-weight: bold;
   }
   
   form {
