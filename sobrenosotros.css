@@ -177,8 +177,8 @@
     font-family: var(--body-font);
     margin: 0 auto; /* Agrega esta línea para centrar el botón */
     display: block; /* Agrega esta línea para convertir el botón en un bloque */
-    margin-right: 10rem;
-    padding: 6px 1px;
+    margin-right: 2rem;
+    
   }
   
   button:hover {
