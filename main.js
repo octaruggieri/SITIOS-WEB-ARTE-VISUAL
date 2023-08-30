@@ -161,12 +161,59 @@ const typed = new Typed('.typed', {
   });
 
 
-  button.onclick = function() {
-    var buscar = document.getElementById("searchInput").valve;
-    if (buscar == "hola") {
-        panel.innerHTML = "es una palabra española";
+
+
+
+  const inputBox = document.getElementById("searchInput");
+const suggBox = document.querySelector(".suggestions");
+const icon = document.querySelector(".icon");
+const suggestions = ["materiales", "presupuesto", "precio", "contacto", "donde estamos", "Que hacemos"]; // Reemplaza con tus sugerencias
+
+inputBox.addEventListener("keyup", (e) => {
+    let userData = e.target.value;
+    let emptyArray = [];
+
+    if (userData) {
+        emptyArray = suggestions.filter((data) =>
+            data.toLowerCase().startsWith(userData.toLowerCase())
+        );
+
+        showSuggestions(emptyArray);
+
+        suggBox.addEventListener("click", (e) => {
+            if (e.target.tagName === "LI") {
+                inputBox.value = e.target.textContent;
+                suggBox.innerHTML = "";
+
+                // Aquí redirige al sitio web específico cuando seleccionas una sugerencia
+                if (inputBox.value === "materiales") {
+                    window.location.href = "sobrenostros.html";
+                } else if (inputBox.value === "presupuesto") {
+                    window.location.href = "sobrenostros.html ";
+                } else if (inputBox.value === "precio") {
+                    window.location.href = "sobrenostros.html";
+                } else if (inputBox.value === "contacto") {
+                    window.location.href = "URL_SITIO_WEB_3";
+                } else if (inputBox.value === "donde estamos") {
+                    window.location.href = "sobrenostros.html";
+                } else if (inputBox.value === "Que hacemos") {
+                    window.location.href = "sobrenostros.html";
+                }
+                
+            }
+        });
+    } else {
+        suggBox.innerHTML = "";
     }
-  }
+});
+
+function showSuggestions(list) {
+    let listData = list.map((data) => `<li>${data}</li>`).join("");
+    suggBox.innerHTML = listData;
+}
+
+
+
 
 
 
